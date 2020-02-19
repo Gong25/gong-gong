@@ -128,34 +128,175 @@ public class Cat extends Animal {
 
 ### 실습코드
 ```java
+import java.util.Scanner;
+
+public class ES_3_1 {
+	public static void main (String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("첫번째 좌표를 입력하세요");
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		System.out.println("두번째 좌표를 입력하세요");
+		int c = scan.nextInt();
+		int d = scan.nextInt();
+		
+		int result = (c-a)*(d-b);
+		
+		if(result<0) {
+			result = result * -1;
+		}
+		
+		System.out.printf("넓이 : %d ",result);
+		
+	}
+}
+
 ```
 ### 실행결과
 ```console
+첫번째 좌표를 입력하세요
+2
+4
+두번째 좌표를 입력하세요
+4
+2
+넓이 : 4 
 ```
 
 ## [실습2]
 
 ### 실습코드
 ```java
+import java.util.Scanner;
+
+public class ES_4_5 {
+	public static void main (String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("입력할 정수의 개수 : ");
+		
+		int a = scan.nextInt();
+		int sum = 0;
+		
+		for (int i=0; i<a; i++) {
+			System.out.printf("정수입력 : ");
+			sum = scan.nextInt() + sum;
+			
+		}
+		
+		System.out.printf("평균 : %f",((double)sum/a));
+		
+		
+		
+	}
+}
+
 ```
 ### 실행결과
 ```console
+입력할 정수의 개수 : 
+4
+정수입력 : 2
+정수입력 : 7
+정수입력 : 2
+정수입력 : 4
+평균 : 3.750000
 ```
 
 ## [실습3]
 
 ### 실습코드
 ```java
+import java.util.Scanner;
+
+public class ES_1_2 {
+	public static void main (String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("정수 세개를 입력하세요");
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		
+		int result = a*b-c;
+		
+		System.out.printf("%d * %d - %d = %d",a,b,c,result);
+		
+		
+	}
+}
+
 ```
 ### 실행결과
 ```console
+정수 세개를 입력하세요
+1
+2
+3
+1 * 2 - 3 = -1
 ```
 
 ## [실습4]
 
 ### 실습코드
 ```java
+public class ES_5_4 {
+	public static void main (String[] args) {
+		
+		for (int i=1; i<=9; i++) {
+			for (int z=1; z<=9; z++) {
+				if(i+z ==9) {
+					System.out.printf(" %d\n+%d\n----\n 99\n\n",10*i+z,10*z+i);
+				}
+			}
+		}
+		
+		
+		
+	}
+}
+
 ```
 ### 실행결과
 ```console
+ 18
++81
+----
+ 99
+
+ 27
++72
+----
+ 99
+
+ 36
++63
+----
+ 99
+
+ 45
++54
+----
+ 99
+
+ 54
++45
+----
+ 99
+
+ 63
++36
+----
+ 99
+
+ 72
++27
+----
+ 99
+
+ 81
++18
+----
+ 99
+
 ```
