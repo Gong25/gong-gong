@@ -130,7 +130,7 @@ public class Cat extends Animal {
 ```java
 import java.util.Scanner;
 
-public class ES_3_1 {
+public class Exam_1 {
 	public static void main (String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("첫번째 좌표를 입력하세요");
@@ -169,7 +169,7 @@ public class ES_3_1 {
 ```java
 import java.util.Scanner;
 
-public class ES_4_5 {
+public class Exam_2 {
 	public static void main (String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
@@ -209,7 +209,7 @@ public class ES_4_5 {
 ```java
 import java.util.Scanner;
 
-public class ES_1_2 {
+public class Exam_3 {
 	public static void main (String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
@@ -240,7 +240,7 @@ public class ES_1_2 {
 
 ### 실습코드
 ```java
-public class ES_5_4 {
+public class Exam_4 {
 	public static void main (String[] args) {
 		
 		for (int i=1; i<=9; i++) {
